@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "590155786877",
+    "firebase_url": "https://pizzajoker.firebaseio.com",
+    "project_id": "pizzajoker",
+    "storage_bucket": "pizzajoker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590155786877:android:eae662bb81e4a704",
+        "android_client_info": {
+          "package_name": "com.example.jovan.pizzaproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "590155786877-bq0k253dplhvnhtth4gmd3fqqdkvj39m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jovan.pizzaproject",
+            "certificate_hash": "391a7c6c565b364cbc6409ec81538e9dda7b8882"
+          }
+        },
+        {
+          "client_id": "590155786877-oim3bvrqeh12uurijrbuvhnhuo0c8u12.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnTGuu_PVYEBfV1-QS08YdarR0SuBFPvk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "590155786877-oim3bvrqeh12uurijrbuvhnhuo0c8u12.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

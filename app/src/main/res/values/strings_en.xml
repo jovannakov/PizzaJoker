@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btnSignIn_en">Sign in</string>
+    <string name="btnSignUp_en">Register</string>
+    <string name="fname_en">First name</string>
+    <string name="lname_en">Last name</string>
+    <string name="mail_en">E-mail</string>
+    <string name="pasw1_en">Password</string>
+    <string name="pasw2_en">Password again</string>
+    <string name="already_member_en">Already member? Sign in</string>
+    <string name="create_acc_en">Create account</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

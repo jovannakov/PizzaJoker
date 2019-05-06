@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_pizza"
+    >
+
+       <RelativeLayout android:layout_width="match_parent" android:layout_height="300dp">
+           <ImageView
+                   android:id="@+id/logo_meni"
+                   android:layout_width="200dp"
+                   android:layout_height="200dp"
+                   android:adjustViewBounds="true"
+                   android:layout_centerInParent="true"
+                   android:src="@drawable/pizzajokercircle"
+                   android:layout_gravity="center_horizontal"
+                   app:layout_constraintTop_toTopOf="parent"/>
+
+       </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btnSignIn"
+                    android:id="@+id/btnSignIn"
+                    android:background="@drawable/custom_styles"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/colorWhite"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btnSignUp"
+                    android:background="@drawable/custom_styles"
+                    android:id="@+id/btnSignUp"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/colorWhite"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
