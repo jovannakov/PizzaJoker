@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import com.example.jovan.pizzaproject.Fragments.MenuFragment;
 import com.example.jovan.pizzaproject.Fragments.ProfileFragment;
+import com.example.jovan.pizzaproject.MainActivity;
 import com.example.jovan.pizzaproject.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
@@ -60,8 +61,6 @@ public class SideMenu extends AppCompatActivity implements NavigationView.OnNavi
             }
         });
 
-        
-
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 //
@@ -100,8 +99,7 @@ public class SideMenu extends AppCompatActivity implements NavigationView.OnNavi
     private void SignOut(){
         Toast.makeText(this, "Одјава...", Toast.LENGTH_SHORT).show();
         mAuth.signOut();
-        Intent i = new Intent(this, LoginForm.class);
-        startActivity(i);
+        startActivity(new Intent(this, MainActivity.class));
     }
 
 
