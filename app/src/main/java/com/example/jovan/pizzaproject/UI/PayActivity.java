@@ -94,27 +94,29 @@ public class PayActivity extends AppCompatActivity {
                 Pattern pattern = Pattern.compile("^07[01256789] [0-9]{3} [0-9]{3}$");
                 Matcher matcher = pattern.matcher(telNum.getText());
                 Pattern pattern1 = Pattern.compile("^07[01256789][0-9]{3}[0-9]{3}$");
-                Matcher matcher1 = pattern.matcher(telNum.getText());
-                if(!matcher.find()){
-                    Toast.makeText(PayActivity.this, "Задолжително внесете телефонски број!", Toast.LENGTH_LONG).show();
-                }else{
+                Matcher matcher1 = pattern1.matcher(telNum.getText());
+
                     if(currentAddTv.getText().equals("")){
                         Toast.makeText(getApplicationContext(), "Вклучете ја локацијата, или почекајте неколку секунди апликацијата да ве лоцира.", Toast.LENGTH_SHORT).show();
                     }else {
-                        int selectedPay = radioPayGroup.getCheckedRadioButtonId();
-                        radioPayWay = (RadioButton) findViewById(selectedPay);
-                        if (selectedPay == R.id.radioCard) {
-                            Toast.makeText(PayActivity.this,
-                                    radioPayWay.getText(), Toast.LENGTH_SHORT).show();
-                            cardForm.setVisibility(View.VISIBLE);
-                            linearLayout.setVisibility(View.GONE);
-                            fillCard();
-                        } else {
-                            payOnHand();
+                        if(!matcher.find() && !matcher1.find()){
+                            telNum.setError("Задолжително внесете телефонски број!");
+                        }else {
+                            int selectedPay = radioPayGroup.getCheckedRadioButtonId();
+                            radioPayWay = (RadioButton) findViewById(selectedPay);
+                            if (selectedPay == R.id.radioCard) {
+                                Toast.makeText(PayActivity.this,
+                                        radioPayWay.getText(), Toast.LENGTH_SHORT).show();
+                                cardForm.setVisibility(View.VISIBLE);
+                                linearLayout.setVisibility(View.GONE);
+                                fillCard();
+                            } else {
+                                payOnHand();
+                            }
                         }
                     }
                 }
-            }
+
         });
 
         android.support.v7.widget.Toolbar toolbar = findViewById(R.id.toolbar);
