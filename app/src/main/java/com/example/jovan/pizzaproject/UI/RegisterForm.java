@@ -75,25 +75,21 @@ public class RegisterForm extends AppCompatActivity {
             fname.setError("Внесете име!");
             flag =  false;
         }
-
         if(ln.equals("")){
             //Toast.makeText(this, R.string.lname_err, Toast.LENGTH_LONG).show();
             lname.setError("Внесете презиме!");
             flag =  false;
         }
-
         if(em.equals("")){
             //Toast.makeText(this, R.string.email_err, Toast.LENGTH_LONG).show();
             email.setError("Внесете е-адреса!");
             flag =  false;
         }
-
         if(p1.equals("")){
             // Toast.makeText(this, R.string.p1_err, Toast.LENGTH_LONG).show();
             pasw1.setError("Внесете лозинка!");
             flag =  false;
         }
-
         if(p2.equals("")){
             //Toast.makeText(this, R.string.p2_err, Toast.LENGTH_LONG).show();
             pasw2.setError("Повторете ја лозинка!");
@@ -105,7 +101,6 @@ public class RegisterForm extends AppCompatActivity {
             pasw2.setError("Лозинките не се совпаѓаат!");
             flag =  false;
         }
-
         return flag;
     }
 
