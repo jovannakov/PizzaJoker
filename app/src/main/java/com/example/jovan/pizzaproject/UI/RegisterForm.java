@@ -90,18 +90,19 @@ public class RegisterForm extends AppCompatActivity {
 
         if(p1.equals("")){
             // Toast.makeText(this, R.string.p1_err, Toast.LENGTH_LONG).show();
-            email.setError("Внесете лозинка!");
+            pasw1.setError("Внесете лозинка!");
             flag =  false;
         }
 
         if(p2.equals("")){
             //Toast.makeText(this, R.string.p2_err, Toast.LENGTH_LONG).show();
-            email.setError("Повторете ја лозинка!");
+            pasw2.setError("Повторете ја лозинка!");
             flag =  false;
         }
         if(!p1.equals(p2)){
-           // Toast.makeText(this, R.string.notmatch_err, Toast.LENGTH_LONG).show();
-            email.setError("Лозинките не се совпаѓаат!");
+            Toast.makeText(this, R.string.notmatch_err, Toast.LENGTH_LONG).show();
+            pasw1.setError("Лозинките не се совпаѓаат!");
+            pasw2.setError("Лозинките не се совпаѓаат!");
             flag =  false;
         }
 
