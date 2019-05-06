@@ -34,7 +34,7 @@ public class SideMenu extends AppCompatActivity implements NavigationView.OnNavi
     CarouselView carouselView;
 
     private int[]  imagespizzas=new int[]{
-            R.drawable.pica4,R.drawable.pica1,R.drawable.pica2,R.drawable.pica3
+            R.drawable.pica4,R.drawable.pica1,R.drawable.heart_pizza,R.drawable.pica3, R.drawable.delivery
     };
 
     private String[] pizzasTitles=new String[]{
