@@ -17,7 +17,6 @@ public interface OrderDao {
     @Query("SELECT * FROM `Order`")
     LiveData<List<Order>> fetchAllTasks();
 
-
     @Query("DELETE FROM `Order`")
     void deleteAll();
 
