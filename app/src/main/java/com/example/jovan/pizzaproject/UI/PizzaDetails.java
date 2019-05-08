@@ -91,7 +91,7 @@ public class PizzaDetails extends AppCompatActivity {
             public void onClick(View v) {
                 if (canOrderMore()){
                     sendOrderToCart();
-
+                    Toast.makeText(PizzaDetails.this, "Вашата нарачка е успешно ставена во кошничка!", Toast.LENGTH_LONG).show();
                 }
 
 

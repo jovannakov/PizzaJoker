@@ -102,15 +102,18 @@ public class LoginForm extends AppCompatActivity {
     }
 
     private boolean validate(String em, String pw){
+        boolean flag = true;
         if(em.equals("")){
-            Toast.makeText(LoginForm.this, R.string.email_err, Toast.LENGTH_LONG).show();
-            return false;
+           // Toast.makeText(LoginForm.this, R.string.email_err, Toast.LENGTH_LONG).show();
+            email.setError("Внесете е-адреса!");
+            flag =  false;
         }
         if(pw.equals("")){
-            Toast.makeText(LoginForm.this, R.string.p1_err, Toast.LENGTH_LONG).show();
-            return false;
+            // Toast.makeText(LoginForm.this, R.string.p1_err, Toast.LENGTH_LONG).show();
+            passw.setError("Внесете лозинка!");
+            flag = false;
         }
-        return true;
+        return flag;
     }
 
     private void goToMenu() {
